@@ -1,0 +1,46 @@
+THE ROLE OF P IN PID: 
+
+calculates the correction usually named as P by multiplying
+the error (e) with a constant (Kp) which decides the intensity  
+with which the bot reacts to the error , P=Kp*e
+
+THE ROLE OF I IN PID:
+
+I is the integral part of PID , it basically calculates the 
+accumulated error over time usually by unequal motor speeds 
+it helps eleminate it by calculating it and so we can use it 
+to calculate the total change is speed and direction we need
+
+THE ROLE OF D IN PID:
+
+D(derivative) part of PID helps avoid the overshooting by 
+corresponding to the rate of change of error.. 
+
+so basically the sum of P, I and D calculates the total 
+correction needed in the left and right wheel to help 
+center the bot with the line . it'll basically allign it 
+with the line 
+
+i would choose PID in this obviously because realistically 
+all these errors do come , and to counter these PID is good
+
+proper tuning of kp and kd is also necessary as if not perfect
+it might cause zigzagging 
+
+
+LOST LINE HANDLING:
+
+the robot detects line loss when all 5 ir sensors indicate 
+that the black line is absent , so instead of continuing with the
+normal pid algo, it enters a recovery mode ..
+
+The robot stores the last known line position or sensor error and
+searches in that direction at a reduced speed. Once the sensors 
+detect the line again, normal PID control resumes.
+
+THE PID output is then used to adjust motor speeds .. if the line 
+is detected towards right then the left motor speed is increased
+and the right motor speed is decreased and the opposite if 
+the line is detected left ..
+        
+**the code of PID is in task9.cpp**

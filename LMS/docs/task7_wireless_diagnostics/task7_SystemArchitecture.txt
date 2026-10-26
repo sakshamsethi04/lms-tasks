@@ -1,0 +1,26 @@
+the ir sensors continuously detect boundaries their readings
+are collected b esp32 while robot is moving ..
+
+stage2:
+the esp 32 analyzes the readings to detect unexpected 
+fluctuations and inconsistencies  it checks repeated
+readings to distinguish possible sensor faults.
+
+stage3:
+when repeated abnormalities are detected esp32 marks that
+sensor as faulty the sensor id etc etc are prepared for 
+transmission 
+
+stage4: 
+the esp 32 then transmits the data to nearby device using BLE 
+
+stage5:
+
+the dashboard on the device displays sensor readings and potential
+faults also it shows logs..which can be used for later Analysis
+
+IR Sensors -> ESP32 Data Acquisition ->
+Fault Detection -> BLE Transmission ->
+device Dashboard and logs
+
+    

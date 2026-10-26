@@ -1,0 +1,20 @@
+visited=[]
+maze_map=[]
+
+func DFS(current_node):
+    mark current node as visited    
+    accessible neighboring nodes
+    record the connections in maze_map
+
+    for every neighbour of current_node:
+        if neighbour is not visited:
+            move to neightbour 
+            DFS(neighbour)
+            move back to current node 
+main: 
+    dfs(start_node)
+    find route from start to goal using maze_map
+    if a route exists:
+        follow the route
+    else:
+        display -> route does not exist.

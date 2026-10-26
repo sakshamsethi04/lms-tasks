@@ -1,0 +1,28 @@
+i would use BLE (bluetooth low energy) for wireless sensor
+diagnostics because ble has low communication overhead and 
+esp32 needs to transmit  small data like ir sensor readings 
+fault status etc to nearby phone 
+
+Latency: ble supports frequent transmission of small data 
+packets and the readings and status reach nearby device with
+less delay
+
+in power consumption too , ble consumes less power than wifi 
+
+The ESP32 supports BLE and can communicate with a phone using GATT
+(Generic Attribute Profile). A GATT service can group diagnostic
+information, while its characteristics can store individual
+sensor readings and fault status
+
+
+Block Diagram
+
+IR Sensors
+
+ESP32 Sensor Data Acquisition
+
+Fault Detection and Analysis
+
+BLE Communication
+
+Phone/PC Dashboard and Diagnostic Logging

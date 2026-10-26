@@ -1,0 +1,15 @@
+COMPARISION OF DFS AND WALL PREFERENCE RULE
+
+wall preference rule  has two types , left wall pref . and 
+right wall pref. .. left one states -> go left if possible
+otherwise go straight , otherwise go right , if none possible 
+then u-turn .. and vice versa for the righ wall pref . rule 
+
+DFS, that is depth first search explores one path first as far
+as possible before backtracking all while keeping track of 
+nodes that are already visited and build a map 
+
+i would use DFS for my unknown maze as wall preference rule 
+has flaws like it can loop forever and miss exit in some maze
+layouts and it has no memory based thinking like dfs keeps track 
+of the nodes already visited..

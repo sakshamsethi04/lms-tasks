@@ -1,0 +1,12 @@
+in exploratory traversal the robot does not know the 
+complete layout, it explores different parts , detectes
+junctions and deadends , backtracks when necessary to build
+a map
+
+in optimal route replay, the robot determines a suitable route
+from start to end once the maze is mapped .. and then follows 
+the sequence of movements without exploring every branch again
+
+replay is simpler because during replay , the map is already 
+known so it only follows the planned movements which reduces
+the time consumed 
